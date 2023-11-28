@@ -120,6 +120,15 @@ h3{
     gap: 20px;
 }
 
+.about-project{
+    font-family: var(--default-font-family);
+    line-height: 1.5em;
+}
+.about-project span a{
+    color:green;
+    text-decoration: none;
+    font-weight: bold;
+}
 .projects .project,
 .certificates .award{
     width:var(--card-width);
@@ -129,6 +138,14 @@ h3{
     grid-template-rows:max-content 200px 1fr;
     background-color: #f5f5f5;
     border-radius: 5px;
+    transition: transform 200ms linear;
+}
+
+.projects .project:hover{
+    transform: translateY(-50px);
+    cursor: pointer;
+    z-index: 99;
+
 }
 
 .project img{
@@ -140,16 +157,36 @@ h3{
 
 
 footer{
-    width: 100%;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-color:blueviolet;
 }
 
 .footer-item{
-    border:2px solid blue;
     width: 300px;
     margin:10px;
     flex-basis: 1;
 }  
+.social-media-info ul,
+.fast-links ul{
+    list-style: none;
+}
+
+.social-media-info ul li,
+.fast-links ul li{
+    padding:5px;
+    text-align: center;
+}
+.social-media-info ul li a,
+.fast-links ul li a{
+    color:rgba(0, 0, 0, 0.743);
+    text-decoration: none;
+}
+
+.fast-links ul li a:hover,
+.social-media-info ul li a:hover{
+    color:#fff;
+    font-weight: bold;
+}

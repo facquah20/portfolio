@@ -14,19 +14,16 @@
         </div>
         <div class="nav-items">
             <div class="nav-item">
-                <a href="#">Home</a>
+                <a href="#home">Profile</a>
             </div>
             <div class="nav-item">
-                <a href="#">About</a>
+                <a href="#projects">Projects</a>
             </div>
             <div class="nav-item">
-                <a href="#">Projects</a>
+                <a href="#awards">Awards and Certificates</a>
             </div>
             <div class="nav-item">
-                <a href="#">Awards and Certificates</a>
-            </div>
-            <div class="nav-item">
-                <a href="#">Social Media</a>
+                <a href="#social-media">Social Media</a>
             </div>
             <div class="nav-item">
                 <a href="#">Contact</a>
@@ -39,13 +36,13 @@
     <div class="large-screens-nav"></div>
 
     <div class="container">
-        <div class="profile">
+        <div class="profile" id="home">
             <div class="developer-image">
                 <h2>Developer's Profile</h2>
                 <img alt="image" src="/public/images/dev.jpg">
             </div>
             <div class="details">
-                <p>
+                <p >
                     Frank Acquah is a result-driven software developer with experience in JavaScript, Java, Typescript, 
                     C++, and Python. He has demonstrated proficiency in developing robust web applications using Nodejs,
                     Express.js, React.js,and Spring Boot. His exceptional problem-solving skills makes him thrive
@@ -53,7 +50,7 @@
                 </p>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <h2>Projects</h2>
             <div>
                 <div class="project">
@@ -62,7 +59,7 @@
                     </header>
                     <img alt="project-image" src="/public/images/bitcoin.jpeg">
                     <div class="content">
-                        <p>
+                        <p class="about-project">
                             CryptoPortfolio Tracker is a web application
                             that allows individuals to keep track of their Crypto
                             assets in real-time.
@@ -78,7 +75,7 @@
                     </header>
                     <img alt="project-image" src="/public/images/diode.jpeg">
                     <div class="content">
-                        <p>
+                        <p class="about-project">
                             A python script that helps computational scientists
                             to calculate the current flowing through a real-diode 
                             using the iterative-model. 
@@ -94,7 +91,7 @@
                     </header>
                     <img alt="project-image" src="/public/images/crypto-image.png">
                     <div class="content">
-                        <p>
+                        <p class="about-project">
                             Fintracker is a web solution that gives individuals and 
                             organizations to manage their income and expenses.
                             <span>
@@ -109,8 +106,9 @@
                     </header>
                     <img alt="project-image" src="/public/images/ecommerce-api.png">
                     <div class="content">
-                        <p>
-                            Project content
+                        <p class="about-project">
+                            An API that interacts with the frontend by allowing
+                            a user to perform crud operations on products.
                         </p>
                     </div>
                 </div>
@@ -120,15 +118,18 @@
                     </header>
                     <img alt="project-image" src="/public/images/task-system.jpeg">
                     <div class="content">
-                        <p>
-                            Project content
+                        <p class="about-project">
+                            This task management system is a python script that
+                            allows a user to keep track of all his daily activities.
+                            The script provides the flexibility of generating a text file
+                            that contains a list of the tasks.
                         </p>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="certificates">
+        <div class="certificates" id="awards">
             <h2>Awards and Certificate</h2>
             <div>
                 <div class="award">
@@ -184,32 +185,47 @@
     </div>
 
     <footer>
-        <div class="social-media-info footer-item">
+        <div class="social-media-info footer-item" id="social-media">
             <h3>Social Media</h3>
             <ul>
                 <li>
-                    <a href="#">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/frank-acquah-016b622b">LinkedIn</a>
                 </li>
                 <li>
-                    <a href="#">Github</a>
+                    <a href="https://github.com/facquah20">Github</a>
                 </li>
                 <li>
                     <a href="#">BitBucket</a>
                 </li>
                 <li>
-                    <a href="#">WhatsApp</a>
+                    <a href="https://wa.me/0591510443">WhatsApp</a>
                 </li>
                 <li>
-                    <a href="#">Email</a>
+                    <a href="mailto:acquahfrank25@gmail.com">Email</a>
                 </li>
             </ul>
         </div>
-        <div class="fast-links footer-item"></div>
-        <div class="footer-item">
-            <p>Hello world</p>
+        <div class="fast-links footer-item">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Project</a>
+                </li>
+                <li>
+                    <a href="#">Download Resume</a>
+                </li>
+                <li>
+                    <a href="#">Awards and Certificates</a>
+                </li>
+            </ul>
         </div>
-        <div class="footer-item"></div>
-        <div class="footer-item"></div>
+        
     </footer>
 
 <script type="text/javascript" src="/src/js/index.js"></script>
